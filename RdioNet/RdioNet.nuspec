@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+	<metadata>
+		<id>RdioNet</id>
+		<version>$version$</version>
+		<title>Rdio for .NET</title>
+		<authors>Diego Frata</authors>
+		<owners>Diego Frata</owners>
+		<projectUrl>http://diegofrata.github.com/RdioNet/</projectUrl>
+		<iconUrl>https://twimg0-a.akamaihd.net/profile_images/2460105031/ud9olyevwji29qbn80so.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>A Rdio API web service implementation for .NET.</description>
+		<releaseNotes>First version published.</releaseNotes>
+		<copyright>Copyright 2012 Diego Frata</copyright>
+		<tags>rdio oauth</tags>
+		<dependencies>
+			<dependency id="Microsoft.CompilerServices.AsyncTargetingPack" version="1.0.0" />
+			<dependency id="Newtonsoft.Json" version="4.5.11" />
+			<dependency id="OAuth" version="1.0.3" />
+		</dependencies>
+	</metadata>
+</package>

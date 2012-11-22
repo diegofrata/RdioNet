@@ -19,6 +19,7 @@
 
 #endregion
 
+
 #region Using Statements
 
 using System;
@@ -31,34 +32,52 @@ using System.Threading.Tasks;
 
 namespace RdioNet
 {
+	/// <summary>
+	/// Defines the OAuth and WebService endpoints.
+	/// </summary>
 	public sealed class RdioServiceDescription
 	{
 		#region Public Properties
 
+		/// <summary>
+		/// The default service description.
+		/// </summary>
 		public static RdioServiceDescription Default
 		{
 			get;
 			set;
 		}
 
+		/// <summary>
+		/// The OAuth AccessToken endpoing.
+		/// </summary>
 		public Uri AccessTokenEndpoint
 		{
 			get;
 			set;
 		}
 
+		/// <summary>
+		/// The OAuth RequestToken endpoint.
+		/// </summary>
 		public Uri RequestTokenEndpoint
 		{
 			get;
 			set;
 		}
 
+		/// <summary>
+		/// The Rdio API web service endpoint.
+		/// </summary>
 		public Uri WebServiceEndpoint
 		{
 			get;
 			set;
 		}
 
+		/// <summary>
+		/// The default CDN endpoint for images.
+		/// </summary>
 		public Uri MediaEndpoint
 		{
 			get;
@@ -84,6 +103,10 @@ namespace RdioNet
 
 		#region Public Methods
 
+		/// <summary>
+		/// Creates a new copy of the service description.
+		/// </summary>
+		/// <returns>Returns a new copy of the service description.</returns>
 		public RdioServiceDescription Copy()
 		{
 			return new RdioServiceDescription

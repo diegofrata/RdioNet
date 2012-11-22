@@ -19,6 +19,7 @@
 
 #endregion
 
+
 #region Using Statements
 
 using System;
@@ -39,7 +40,7 @@ namespace RdioNet.OAuth
 	public enum OAuthTokenType
 	{
 		/// <summary>
-		/// Poorly created <seealso cref="OAuthToken"/> objects have this value. 
+		/// Poorly created <seealso cref="OAuthToken"/> objects have this value.
 		/// </summary>
 		Unknown,
 

@@ -19,13 +19,16 @@
 
 #endregion
 
+
 #region Using Statements
 
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 using RdioNet.Models;
 
 #endregion
@@ -38,47 +41,47 @@ namespace RdioNet.Tests
 		#region Public Methods
 
 		[TestMethod]
-		public async Task Get()
+		public void Get()
 		{
 			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
 
-			var album = await client.Core.GetAsync<RdioAlbum>("a1", new Dictionary<string, string> { { "test", "test" } }, RdioAlbum.Extras.All);
+			var album = client.Core.GetAsync<RdioAlbum>("a1", new Dictionary<string, string> { { "test", "test" } }, RdioAlbum.Extras.All).Result;
 
 			Assert.IsNotNull(album);
 			Assert.AreEqual("a1", album.Key);
 			Assert.IsNotNull(album.Label);
 
-			var artist = await client.Core.GetAsync<RdioArtist>(album.ArtistKey, RdioArtist.Extras.All);
+			var artist = client.Core.GetAsync<RdioArtist>(album.ArtistKey, RdioArtist.Extras.All).Result;
 
 			Assert.IsNotNull(artist);
 			Assert.AreEqual(album.ArtistKey, artist.Key);
 			Assert.IsTrue(artist.AlbumCount.HasValue);
 
-			var label = await client.Core.GetAsync<RdioLabel>(album.Label.Key);
+			var label = client.Core.GetAsync<RdioLabel>(album.Label.Key).Result;
 
 			Assert.IsNotNull(label);
 			Assert.AreEqual(album.Label.Key, label.Key);
 			Assert.AreEqual(album.Label.Name, label.Name);
 
-			var tracks = await client.Core.GetAsync<RdioTrack>(album.TrackKeys);
+			var tracks = client.Core.GetAsync<RdioTrack>(album.TrackKeys).Result;
 
 			Assert.AreEqual(album.Length, tracks.Count);
 
-			var playlist = await client.Core.GetAsync<RdioPlaylist>("p1", RdioPlaylist.Extras.All);
+			var playlist = client.Core.GetAsync<RdioPlaylist>("p1", RdioPlaylist.Extras.All).Result;
 
 			Assert.IsNotNull(playlist);
 			Assert.IsNotNull(playlist.TrackKeys);
 			Assert.IsNotNull(playlist.Tracks);
 
-			var user = await client.Core.GetAsync<RdioUser>("s1", RdioUser.Extras.All);
+			var user = client.Core.GetAsync<RdioUser>("s1", RdioUser.Extras.All).Result;
 
 			Assert.IsNotNull(user);
 
-			var collectionAlbum = await client.Core.GetAsync<RdioCollectionAlbum>("al233072|100", RdioCollectionAlbum.Extras.All);
+			var collectionAlbum = client.Core.GetAsync<RdioCollectionAlbum>("al233072|100", RdioCollectionAlbum.Extras.All).Result;
 
 			Assert.IsNotNull(collectionAlbum);
 
-			var trash = await client.Core.GetAsync<RdioObject>("asdasd");
+			var trash = client.Core.GetAsync<RdioObject>("asdasd").Result;
 
 			Assert.IsNull(trash);
 
@@ -86,22 +89,22 @@ namespace RdioNet.Tests
 
 			try
 			{
-				await client.Core.GetAsync<RdioObject>("123asdasd");
+				 client.Core.GetAsync<RdioObject>("123asdasd").Wait();
 			}
-			catch (Exception ex)
+			catch (AggregateException ex)
 			{
-				exception = ex;
+				exception = ex.Flatten().GetBaseException();
 			}
 
 			Assert.IsTrue(exception is RdioException);
 		}
 
 		[TestMethod]
-		public async Task GetObjectFromShortCode()
+		public void GetObjectFromShortCode()
 		{
 			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
 
-			var item = await client.Core.GetObjectFromShortCodeAsync<RdioObject>("QitDAH7D");
+			var item = client.Core.GetObjectFromShortCodeAsync<RdioObject>("QitDAH7D").Result;
 
 			Assert.IsNotNull(item);
 
@@ -109,22 +112,22 @@ namespace RdioNet.Tests
 
 			try
 			{
-				item = await client.Core.GetObjectFromShortCodeAsync<RdioObject>("blablabla");
+				item = client.Core.GetObjectFromShortCodeAsync<RdioObject>("blablabla").Result;
 			}
-			catch (Exception ex)
+			catch (AggregateException ex)
 			{
-				exception = ex;
+				exception = ex.Flatten().GetBaseException();
 			}
 
 			Assert.IsNotNull(exception);
 		}
 
 		[TestMethod]
-		public async Task GetObjectFromUrl()
+		public void GetObjectFromUrl()
 		{
 			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
 
-			var item = await client.Core.GetObjectFromUrlAsync<RdioObject>("/artist/Crystal_Castles/album/(III)/");
+			var item = client.Core.GetObjectFromUrlAsync<RdioObject>("/artist/Crystal_Castles/album/(III)/").Result;
 
 			Assert.IsNotNull(item);
 		}

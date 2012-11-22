@@ -19,13 +19,16 @@
 
 #endregion
 
+
 #region Using Statements
 
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 using RdioNet.Models;
 
 #endregion
@@ -38,11 +41,11 @@ namespace RdioNet.Tests
 		#region Public Methods
 
 		[TestMethod]
-		public async Task Search()
+		public void Search()
 		{
 			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
 
-			var search = await client.Catalog.SearchAsync<RdioObject>("Home Bunda", RdioObjectType.Track | RdioObjectType.Album);
+			var search = client.Catalog.SearchAsync<RdioObject>("Home Bunda", RdioObjectType.Track | RdioObjectType.Album).Result;
 		}
 
 		#endregion

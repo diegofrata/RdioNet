@@ -19,6 +19,7 @@
 
 #endregion
 
+
 #region Using Statements
 
 using System;
@@ -27,7 +28,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 using RdioNet.Models;
 
 #endregion
@@ -42,11 +45,11 @@ namespace RdioNet.Tests
 		// Uncomment this test to test the login and also to obtain the access token required
 		// for the other tests.
 		//[TestMethod]
-		public async Task Authenticate()
+		public void Authenticate()
 		{
 			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret);
 
-			var response = await client.RequestUserAuthorizationAsync();
+			var response = client.RequestUserAuthorizationAsync().Result;
 
 			Assert.IsNotNull(response.AuthorizationUrl);
 			Assert.IsNotNull(response.RequestToken);
@@ -59,7 +62,7 @@ namespace RdioNet.Tests
 
 			var verifier = Microsoft.VisualBasic.Interaction.InputBox("Fill the verification code.", "RdioNet", "", 0, 0);
 
-			var token = await client.CompleteUserAuthorizationAsync(verifier);
+			var token = client.CompleteUserAuthorizationAsync(verifier).Result;
 
 			Assert.IsNotNull(token);
 			Assert.AreEqual(OAuth.OAuthTokenType.Access, token.Type);

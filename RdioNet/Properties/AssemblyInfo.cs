@@ -19,6 +19,7 @@
 
 #endregion
 
+
 #region Using Statements
 
 using System.Reflection;
@@ -31,11 +32,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RdioNet")]
+[assembly: AssemblyTitle("Rdio for .NET")]
 [assembly: AssemblyDescription("A Rdio API implementation.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Diego Frata")]
-[assembly: AssemblyProduct("RdioNet")]
+[assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("Copyright © 2012 Diego Frata")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -58,6 +59,10 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: InternalsVisibleTo("RdioNet.Tests")]
+[assembly: AssemblyVersion("1.0.1.0")]
+[assembly: AssemblyFileVersion("1.0.1.0")]
+[assembly: InternalsVisibleTo("RdioNet.Tests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100fd6bd5c4c2f932" +
+"c4084e9cfdff9b9812b90e2c82f9d03ec9f7244a6ace0a69665f38664af95a089f877ac8eefc95" +
+"1787170b8567c868a4157abf8f5340472e6546d50ca218b4c298d3f0e9d7e1ef2e82cd82d5d643" +
+"62ca96fa195ceb63a03b703c73eb2366b3bbf9ffe24006b80d6157f1b770f93d59d020f4af8d66" +
+"d16fafe1")]

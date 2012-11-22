@@ -19,6 +19,7 @@
 
 #endregion
 
+
 #region Using Statements
 
 using System.Reflection;
@@ -31,11 +32,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RdioNet.Tests")]
+[assembly: AssemblyTitle("Rdio for .NET")]
 [assembly: AssemblyDescription("A Rdio API implementation.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Diego Frata")]
-[assembly: AssemblyProduct("RdioNet.Tests")]
+[assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("Copyright © 2012 Diego Frata")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
