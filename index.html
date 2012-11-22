@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Rdionet by diegofrata</title>
+    <title>Rdio for .NET by diegofrata</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,8 +15,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Rdionet</h1>
-        <p>Rdio for .NET is an Rdio API web service implentation. It features a full object oriented design and async-await support.</p>
+        <h1>Rdio for .NET</h1>
+        <p>A Rdio API  implementation for .NET</p>
 
         <p class="view"><a href="https://github.com/diegofrata/RdioNet">View the Project on GitHub <small>diegofrata/RdioNet</small></a></p>
 
@@ -28,22 +28,9 @@
         </ul>
       </header>
       <section>
-        <h1>Rdio for .NET</h1>
+        <h1>Welcome</h1>
 
 <p>Rdio for .NET is an Rdio API web service implentation. It features a full object oriented design and async-await support. It's based on .NET 4 and Async Targeting Pack.</p>
-
-<hr><p>To start using Rdio for .NET, create a new instance of <code>RdioClient</code> with your Rdion consumer credentials and, optionally, the OAuth access token and secret.</p>
-
-<div class="highlight"><pre><span class="kt">var</span> <span class="n">client</span> <span class="p">=</span> <span class="k">new</span> <span class="n">RdioClient</span><span class="p">(</span><span class="s">"consumerKey"</span><span class="p">,</span> <span class="s">"consumerSecret"</span><span class="p">,</span> <span class="s">"accessToken"</span><span class="p">,</span> <span class="s">"accessSecret"</span><span class="p">);</span>
-</pre></div>
-
-<p>The API methods are grouped according to the Rdio API documentation. For example, to call the Get method, you must first access the Core property of the client, where all the Core methods are implemented.</p>
-
-<div class="highlight"><pre><span class="kt">var</span> <span class="n">track</span> <span class="p">=</span> <span class="k">await</span> <span class="n">client</span><span class="p">.</span><span class="n">Core</span><span class="p">.</span><span class="n">GetAsync</span><span class="p">&lt;</span><span class="n">RdioTrack</span><span class="p">&gt;(</span><span class="s">"t2537455"</span><span class="p">,</span> <span class="n">RdioTrack</span><span class="p">.</span><span class="n">Extras</span><span class="p">.</span><span class="n">All</span><span class="p">);</span>
-<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">"I love {0} by {1}!"</span><span class="p">,</span> <span class="n">track</span><span class="p">.</span><span class="n">Name</span><span class="p">,</span> <span class="n">track</span><span class="p">.</span><span class="n">Artist</span><span class="p">);</span>
-</pre></div>
-
-<p>Check out the <code>RdioNet.Tests</code> project for more examples. The tests projects will be improved over the time and more coverage will be added.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/diegofrata">diegofrata</a></p>
