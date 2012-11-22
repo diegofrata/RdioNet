@@ -35,10 +35,10 @@ namespace RdioNet.Tests
 	{
 		#region Constants
 
-		public const string ConsumerKey = "trzaqx6tt5fyjhkhkyrehfz5";
-		public const string ConsumerSecret = "b4u6wxzCZs";
-		public const string AccessKey = "7r85a898dr5d5t7wvpvehrca4sbm4g558j6tdxe449mpjfnajz45dcqwbxanh8jx";
-		public const string AccessSecret = "BBVSVtU5XvFJ";
+		public const string ConsumerKey = "";
+		public const string ConsumerSecret = "";
+		public const string AccessKey = "";
+		public const string AccessSecret = "";
 
 		#endregion
 	}
