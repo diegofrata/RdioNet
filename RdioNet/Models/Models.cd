@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RdioNet.Models.Activities.RdioCollectionActivityUpdate">
+    <Position X="29.25" Y="15.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Models\Activities\RdioCollectionActivityUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Activities.RdioCommentActivityUpdate">
+    <Position X="32.25" Y="15.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Activities\RdioCommentActivityUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Activities.RdioPeopleActivityUpdate">
+    <Position X="35.25" Y="15.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Activities\RdioPeopleActivityUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Activities.RdioPlaylistActivityUpdate">
+    <Position X="38" Y="15.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Activities\RdioPlaylistActivityUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Extras.RdioAlbumExtras">
+    <Position X="14.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEABAAAAAIAAAABAAAAAACAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Models\Extras\RdioAlbumExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Extras.RdioArtistExtras">
+    <Position X="19.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAIA=</HashCode>
+      <FileName>Models\Extras\RdioArtistExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Extras.RdioArtistStationExtras">
+    <Position X="16.75" Y="16.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAIA=</HashCode>
+      <FileName>Models\Extras\RdioArtistStationExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Extras.RdioCollectionAlbumExtras">
+    <Position X="13.75" Y="17" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Models\Extras\RdioCollectionAlbumExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Extras.RdioCollectionArtistExtras">
+    <Position X="19.5" Y="16.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Models\Extras\RdioCollectionArtistExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Extras.RdioExtras">
+    <Position X="18.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Models\Extras\RdioExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Extras.RdioPlaylistExtras">
+    <Position X="11.25" Y="13.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAgAQAAAAAAABAEAQAACAAAAIAAABAAAAA=</HashCode>
+      <FileName>Models\Extras\RdioPlaylistExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Extras.RdioStationExtras">
+    <Position X="17" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Models\Extras\RdioStationExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Extras.RdioTrackExtras">
+    <Position X="22.25" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAABAAAAACCAAAAIAAAAAAAgA=</HashCode>
+      <FileName>Models\Extras\RdioTrackExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Extras.RdioUserExtras">
+    <Position X="24.5" Y="13.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAACAIAAEBQQAAAACAQEhAAAACIQAKgAAAIA=</HashCode>
+      <FileName>Models\Extras\RdioUserExtras.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioActivity" Collapsed="true">
+    <Position X="41.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Models\RdioActivity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioActivityUpdate">
+    <Position X="33.75" Y="13.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\RdioActivityUpdate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioAlbum">
+    <Position X="31.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQBKAABAJEIAFBZAAYAACAiECAAAACEIAAA=</HashCode>
+      <FileName>Models\RdioAlbum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioArtist">
+    <Position X="34" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAgAFARAAAAAAACACAAAAAEBIIA=</HashCode>
+      <FileName>Models\RdioArtist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioArtistStation">
+    <Position X="15.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAgAEAAAAAAAAACECAAAAAEBIIA=</HashCode>
+      <FileName>Models\RdioArtistStation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioArtistTopSongsStation">
+    <Position X="15.25" Y="9.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\RdioArtistTopSongsStation.cs</FileName>
+      <NewMemberFileName>Models\RdioArtistStation.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioCollectionAlbum">
+    <Position X="31.5" Y="9.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAIAAAAIAAAAABQAAAAAAAAAgACAAAAAACAAAAAA=</HashCode>
+      <FileName>Models\RdioCollectionAlbum.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioCollectionArtist">
+    <Position X="34" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAABQAAAAQAAAAAAAAEAAAACAAIAAA=</HashCode>
+      <FileName>Models\RdioCollectionArtist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioHeavyRotationStation">
+    <Position X="12" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\RdioHeavyRotationStation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioHeavyRotationUserStation">
+    <Position X="12" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\RdioHeavyRotationUserStation.cs</FileName>
+      <NewMemberFileName>Models\RdioHeavyRotationStation.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioLabel">
+    <Position X="36.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAACACAAAAAABAAA=</HashCode>
+      <FileName>Models\RdioLabel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioLabelStation">
+    <Position X="18.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAgEAAAAAAAAAACACAAAAAABAAA=</HashCode>
+      <FileName>Models\RdioLabelStation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioObject">
+    <Position X="24.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\RdioObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioPlaylist">
+    <Position X="23.25" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgCAgEAgAQAABAIAEBVEAQAACACACAAAAhEAAAA=</HashCode>
+      <FileName>Models\RdioPlaylist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioStation">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAABAAAAAQAAQAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Models\RdioStation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioTrack">
+    <Position X="25.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAgAQACAABABEIAFBRAAJAiCCiECCAACCEIAhA=</HashCode>
+      <FileName>Models\RdioTrack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioUser">
+    <Position X="28.5" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEEAAAACAIACEBQQAEAACAQEhAAAgCAQAKgEAAIg=</HashCode>
+      <FileName>Models\RdioUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioUserCollectionStation">
+    <Position X="20.5" Y="8" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\RdioUserCollectionStation.cs</FileName>
+      <NewMemberFileName>Models\RdioUser.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.RdioUserStation">
+    <Position X="20.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\RdioUserStation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Results.RdioPlaylistsResult" Collapsed="true">
+    <Position X="43" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAIAAAAIA=</HashCode>
+      <FileName>Models\Results\RdioPlaylistsResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Results.RdioResult&lt;TResult&gt;" Collapsed="true">
+    <Position X="44.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Results\RdioResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RdioNet.Models.Results.RdioSearchResult&lt;T&gt;" Collapsed="true">
+    <Position X="41.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAQAACAAgAAIAAAQAAAAAAIA=</HashCode>
+      <FileName>Models\Results\RdioSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="RdioNet.Models.RdioActivityScope" Collapsed="true">
+    <Position X="41.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\RdioActivityScope.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RdioNet.Models.RdioActivityUpdateType" Collapsed="true">
+    <Position X="43" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACgAAAAAABEAIAAAAAAAAAAAAAAAAAAAKAQAAAAIA=</HashCode>
+      <FileName>Models\RdioActivityUpdateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RdioNet.Models.RdioObjectType" Collapsed="true">
+    <Position X="44.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARAAAAkEAABBAAAAAAAAIAAIABAAIAAAAACAAgABA=</HashCode>
+      <FileName>Models\RdioObjectType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RdioNet.Models.RdioPlaylistCollaborationMode" Collapsed="true">
+    <Position X="41.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAEAAAI=</HashCode>
+      <FileName>Models\RdioPlaylistCollaborationMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RdioNet.Models.RdioPlaylistKind" Collapsed="true">
+    <Position X="43" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAIAAAAJA=</HashCode>
+      <FileName>Models\RdioPlaylistKind.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RdioNet.Models.RdioPlaylistVisibilityReason" Collapsed="true">
+    <Position X="44.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAQAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAA=</HashCode>
+      <FileName>Models\RdioPlaylistVisibilityReason.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RdioNet.Models.RdioSortingFields" Collapsed="true">
+    <Position X="41.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAIAAAAAAAAAAUAAIAAAAAAAQAACAAAAAA=</HashCode>
+      <FileName>Models\RdioSortingFields.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RdioNet.Models.RdioTimeframe" Collapsed="true">
+    <Position X="43" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAABAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\RdioTimeframe.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RdioNet.Models.RdioUserGender" Collapsed="true">
+    <Position X="44.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAABA=</HashCode>
+      <FileName>Models\RdioUserGender.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9.16" />
+</ClassDiagram>
