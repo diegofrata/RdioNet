@@ -48,6 +48,14 @@ namespace RdioNet.Tests
 			var search = client.Catalog.SearchAsync<RdioObject>("Home Bunda", RdioObjectType.Track | RdioObjectType.Album).Result;
 		}
 
+		[TestMethod]
+		public void GetAlbumsForLabel()
+		{
+			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
+
+			var albums = client.Catalog.GetAlbumsForLabelAsync("l1").Result;
+		}
+
 		#endregion
 	}
 }

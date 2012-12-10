@@ -104,12 +104,13 @@ namespace RdioNet.Methods
 		/// <summary>
 		/// 	Gets the albums for a label.
 		/// </summary>
-		/// <param name="label">The label's key.</param>
+		/// <param name="label">The label's key.</param>   
+		/// <param name="sort">The sorting direction of the results. Only PlayCount and ReleaseDate are known to be supported.</param>
 		/// <param name="start">The offset of the first result to return.</param>
 		/// <param name="count">The maximum number of results to return.</param>
 		/// <param name="extras">The extra fields to be included in the object.</param>
 		/// <returns>Returns a list of albums.</returns>
-		public Task<IList<RdioAlbum>> GetAlbumsForLabelAsync(string label, int start = 0, int count = 0, params string[] extras)
+		public Task<IList<RdioAlbum>> GetAlbumsForLabelAsync(string label, RdioSortingFields sort = RdioSortingFields.PlayCount, int start = 0, int count = 0, params string[] extras)
 		{
 			if (string.IsNullOrEmpty(label))
 				throw new ArgumentNullException("label");
@@ -117,6 +118,7 @@ namespace RdioNet.Methods
 			var parameters = new Dictionary<string, string>
 			{
 				{ "label", label },
+				{ "sort", sort.ToPascalCase() },
 				{ "extras", extras.ToCommaSeparatedList() }
 			};
 
