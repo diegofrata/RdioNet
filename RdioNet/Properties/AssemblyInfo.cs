@@ -59,8 +59,8 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.1.0")]
-[assembly: AssemblyFileVersion("1.0.1.0")]
+[assembly: AssemblyVersion("1.0.2")]
+[assembly: AssemblyFileVersion("1.0.2")]
 [assembly: InternalsVisibleTo("RdioNet.Tests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100fd6bd5c4c2f932" +
 "c4084e9cfdff9b9812b90e2c82f9d03ec9f7244a6ace0a69665f38664af95a089f877ac8eefc95" +
 "1787170b8567c868a4157abf8f5340472e6546d50ca218b4c298d3f0e9d7e1ef2e82cd82d5d643" +
