@@ -92,6 +92,7 @@ namespace RdioNet.Methods
 				data.Add("method", method);
 
 				var httpRequest = request.CreateRequestWithAuthorizationBody(_client.ServiceDescription.WebServiceEndpoint, data);
+				httpRequest.ProtocolVersion = new Version(1, 0);
 				httpRequest.ContentType = "application/x-www-form-urlencoded";
 
 				using (var httpResponse = await httpRequest.GetHttpWebResponseAsync())
