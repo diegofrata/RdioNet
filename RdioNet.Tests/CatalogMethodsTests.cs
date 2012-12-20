@@ -43,7 +43,7 @@ namespace RdioNet.Tests
 		[TestMethod]
 		public void Search()
 		{
-			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
+			var client = ClientFactory.CreateClient();
 
 			var search = client.Catalog.SearchAsync<RdioObject>("Home Bunda", RdioObjectType.Track | RdioObjectType.Album).Result;
 		}
@@ -51,7 +51,7 @@ namespace RdioNet.Tests
 		[TestMethod]
 		public void GetAlbumsForLabel()
 		{
-			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
+			var client = ClientFactory.CreateClient();
 
 			var albums = client.Catalog.GetAlbumsForLabelAsync("l1").Result;
 		}

@@ -32,7 +32,7 @@ using System.Threading.Tasks;
 
 namespace RdioNet.Tests
 {
-	public class Constants
+	public class ClientFactory
 	{
 		#region Constants
 
@@ -40,6 +40,15 @@ namespace RdioNet.Tests
 		public const string ConsumerSecret = "";
 		public const string AccessKey = "";
 		public const string AccessSecret = "";
+
+		#endregion
+
+		#region Public Methods
+
+		public static RdioClient CreateClient()
+		{
+			return new RdioClient(ClientFactory.ConsumerKey, ClientFactory.ConsumerSecret, ClientFactory.AccessKey, ClientFactory.AccessSecret);
+		}
 
 		#endregion
 	}

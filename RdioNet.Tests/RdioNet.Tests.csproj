@@ -69,7 +69,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Constants.cs" />
+    <Compile Include="ClientFactory.cs" />
     <Compile Include="CatalogMethodsTests.cs" />
     <Compile Include="PlaylistsMethodsTests.cs" />
     <Compile Include="CoreMethodsTests.cs" />

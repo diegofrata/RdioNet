@@ -43,7 +43,7 @@ namespace RdioNet.Tests
 		[TestMethod]
 		public void Get()
 		{
-			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
+			var client = ClientFactory.CreateClient();
 
 			var album = client.Core.GetAsync<RdioAlbum>("a1", new Dictionary<string, string> { { "test", "test" } }, RdioAlbum.Extras.All).Result;
 
@@ -102,7 +102,7 @@ namespace RdioNet.Tests
 		[TestMethod]
 		public void GetObjectFromShortCode()
 		{
-			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
+			var client = new RdioClient(ClientFactory.ConsumerKey, ClientFactory.ConsumerSecret, ClientFactory.AccessKey, ClientFactory.AccessSecret);
 
 			var item = client.Core.GetObjectFromShortCodeAsync<RdioObject>("QitDAH7D").Result;
 
@@ -125,7 +125,7 @@ namespace RdioNet.Tests
 		[TestMethod]
 		public void GetObjectFromUrl()
 		{
-			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
+			var client = new RdioClient(ClientFactory.ConsumerKey, ClientFactory.ConsumerSecret, ClientFactory.AccessKey, ClientFactory.AccessSecret);
 
 			var item = client.Core.GetObjectFromUrlAsync<RdioObject>("/artist/Crystal_Castles/album/(III)/").Result;
 

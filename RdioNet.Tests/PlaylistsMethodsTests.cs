@@ -43,7 +43,7 @@ namespace RdioNet.Tests
 		[TestMethod]
 		public void GetPlaylists()
 		{
-			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret, Constants.AccessKey, Constants.AccessSecret);
+			var client = ClientFactory.CreateClient();
 
 			var playlists = client.Playlists.GetPlaylistsAsync().Result;
 		}

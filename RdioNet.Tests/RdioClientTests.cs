@@ -47,7 +47,7 @@ namespace RdioNet.Tests
 		//[TestMethod]
 		public void Authenticate()
 		{
-			var client = new RdioClient(Constants.ConsumerKey, Constants.ConsumerSecret);
+			var client = new RdioClient(ClientFactory.ConsumerKey, ClientFactory.ConsumerSecret);
 
 			var response = client.RequestUserAuthorizationAsync().Result;
 
