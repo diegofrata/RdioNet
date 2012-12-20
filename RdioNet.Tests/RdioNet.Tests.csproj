@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="ClientFactory.cs" />
     <Compile Include="CatalogMethodsTests.cs" />
+    <Compile Include="ActivityMethodsTests.cs" />
     <Compile Include="PlaylistsMethodsTests.cs" />
     <Compile Include="CoreMethodsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

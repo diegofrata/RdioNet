@@ -83,7 +83,7 @@ namespace RdioNet.Tests
 
 			var trash = client.Core.GetAsync<RdioObject>("asdasd").Result;
 
-			Assert.IsNull(trash);
+			Assert.IsNull(trash);			
 
 			Exception exception = null;
 

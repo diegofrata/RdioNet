@@ -24,29 +24,30 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+using RdioNet.Models;
+
 #endregion
 
-namespace RdioNet.Models.Activities
+namespace RdioNet.Tests
 {
-	/// <summary>
-	/// Represents an update activity involving one or more <seealso cref="RdioCollectionAlbum"/> objects.
-	/// </summary>
-	public class RdioCollectionActivityUpdate : RdioActivityUpdate
+	[TestClass]
+	public class ActivityMethodsTests
 	{
-		#region Public Properties
+		#region Public Methods
 
-		/// <summary>
-		/// A list of albums affected by the update.
-		/// </summary>
-		public IList<RdioAlbum> Albums
+		[TestMethod]
+		public void GetActitivyStream()
 		{
-			get;
-			set;
+			var client = ClientFactory.CreateClient();
+
+			var activities = client.Activity.GetActivityStreamAsync("s1").Result;
 		}
+
 
 		#endregion
 	}

@@ -28,6 +28,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Newtonsoft.Json;
+
 #endregion
 
 namespace RdioNet.Models
@@ -60,6 +62,7 @@ namespace RdioNet.Models
 		/// <summary>
 		/// The type of the update.
 		/// </summary>
+		[JsonProperty("update_type")]
 		public RdioActivityUpdateType UpdateType
 		{
 			get;
