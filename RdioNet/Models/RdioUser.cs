@@ -270,6 +270,15 @@ namespace RdioNet.Models
 		}
 
 		/// <summary>
+		/// Extra. Identifies an user's Twitter account.
+		/// </summary>
+		public Uri TwitterUrl
+		{
+			get;
+			set;
+		}
+
+		/// <summary>
 		/// List of extra properties.
 		/// </summary>
 		public static RdioUserExtras Extras

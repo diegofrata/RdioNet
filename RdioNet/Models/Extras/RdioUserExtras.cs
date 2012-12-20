@@ -57,6 +57,7 @@ namespace RdioNet.Models.Extras
 		public readonly string DisplayName = "displayName";
 		public readonly string IsUnlimited = "isUnlimited";
 		public readonly string IsSubscriber = "isSubscriber";
+		public readonly string TwitterUrl = "twitterUrl";
 
 		#endregion
 
@@ -73,7 +74,7 @@ namespace RdioNet.Models.Extras
 				{
 					FollowingUrl, IsTrial, ArtistCount, LastSongPlayed, HeavyRotationKey, NetworkHeavyRotationKey,
 					AlbumCount, TrackCount, LastSongPlayTime, Username, ReviewCount, CollectionUrl, PlaylistsUrl,
-					CollectionKey, FollowersUrl, DisplayName, IsUnlimited, IsSubscriber
+					CollectionKey, FollowersUrl, DisplayName, IsUnlimited, IsSubscriber, TwitterUrl
 				};
 			}
 		}
