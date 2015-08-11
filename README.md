@@ -19,4 +19,4 @@ var track = await client.Core.GetAsync<RdioTrack>("t2537455", RdioTrack.Extras.A
 Console.WriteLine("I love {0} by {1}!", track.Name, track.Artist);
 ```
 
-Check out the `RdioNet.Tests` project for more examples. The tests projects will be improved over the time and more coverage will be added.
+UPDATE: This lib was written few years ago, on what I would call a "crazy night" for a demo. I had hopes I'd mantain it and get some REAL tests written (proper test cases, etc.), but never did. I'm just keeping this code here in case anyone finds it useful -- I don't even know how much outdated it is in comparison with Rdio's current APIs.
