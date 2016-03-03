@@ -1,9 +1,10 @@
 Rdio for .NET
 =============
 
+*Rdio was discontinued and this library has no use anymore. RIP Rdio!*
+
 Rdio for .NET is an Rdio API web service implentation. It features a full object oriented design and async-await support. It's based on .NET 4 and Async Targeting Pack.
 
-Get it on NuGet! http://nuget.org/packages/RdioNet/
 ---
 
 To start using Rdio for .NET, create a new instance of `RdioClient` with your Rdion consumer credentials and, optionally, the OAuth access token and secret.
